@@ -1,5 +1,4 @@
-# template
-## directory structure
+# directory structure
 		|── board_files
 		|   |── BOARD_NAME
 		|   |   |── 1.0
@@ -7,7 +6,6 @@
 		|   |   |   |── board_name.png
 		|   |   |   |── part0_pins.xml
 		|   |   |   |── preset.xml
-		|   |   |   |── xitem.json
 		|── documents
 		|── BSP
 		|   |── boot
