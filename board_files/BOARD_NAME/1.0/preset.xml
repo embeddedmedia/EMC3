@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<!-- ##################################################################### -->
+<!-- ##Sundance Multiprocessor Technology LTD.-->
+<!-- ##BOARD_NAME-->
+<!-- ##################################################################### -->
+<!-- ##SUN File Version:1.0-->
+<!-- ##SUN Last Modification:2023.09.18 -->
+<!-- ##################################################################### -->
+<!-- ##Vivado Version:2022.2-->
+<!-- ##################################################################### -->
+<!-- ##Author:  -->
+<!-- ##################################################################### -->
+
+<ip_presets schema="1.0">
+  <!--insert ip presets here, see ug895 or other board part files-->
+
+  <ip_preset preset_proc_name="zynq_ultra_ps_e_preset"> 
+    <ip vendor="xilinx.com" library="ip" name="zynq_ultra_ps_e" version="*"> 
+      <user_parameters>
+       <user_parameter  name="CONFIG.PSU__PRESET_APPLIED" value="1"/>
+       <user_parameter  name="CONFIG.PSU_DYNAMIC_DDR_CONFIG_EN" value="1" />
+       <user_parameter  name="CONFIG.PSU_BANK_0_IO_STANDARD" value="LVCMOS33"/>
+       <user_parameter  name="CONFIG.PSU_BANK_1_IO_STANDARD" value="LVCMOS25"/>
+       <user_parameter  name="CONFIG.PSU_BANK_2_IO_STANDARD" value="LVCMOS25"/>
+       <user_parameter  name="CONFIG.PSU__CAN0__PERIPHERAL__ENABLE" value="0"/>
+       <user_parameter  name="CONFIG.PSU__CAN0__PERIPHERAL__IO" value="MIO 10 .. 11"/>
+       <user_parameter  name="CONFIG.PSU__ENET0__GRP_MDIO__ENABLE" value="0"/>
+       <user_parameter  name="CONFIG.PSU__ENET0__GRP_MDIO__IO" value="EMIO"/>
+       <user_parameter  name="CONFIG.PSU__ENET0__PERIPHERAL__ENABLE" value="1"/>
+       <user_parameter  name="CONFIG.PSU__ENET0__PERIPHERAL__IO" value="EMIO"/>
+       <user_parameter  name="CONFIG.PSU__ENET0__TSU__ENABLE" value="1"/>	
+       <user_parameter  name="CONFIG.PSU__ENET1__GRP_MDIO__ENABLE" value="0"/>
+       <user_parameter  name="CONFIG.PSU__ENET1__GRP_MDIO__IO" value="MIO 76 .. 77"/>
+       <user_parameter  name="CONFIG.PSU__ENET1__PERIPHERAL__ENABLE" value="1"/>
+       <user_parameter  name="CONFIG.PSU__ENET1__PERIPHERAL__IO" value="EMIO"/>
+       <user_parameter  name="CONFIG.PSU__ENET1__TSU__ENABLE" value="1"/>  
+		     <user_parameter  name="CONFIG.PSU__GPIO0_MIO__PERIPHERAL__ENABLE" value="0"/>
+		     <user_parameter  name="CONFIG.PSU__GPIO2_MIO__PERIPHERAL__ENABLE" value="0"/>		 
+       <user_parameter  name="CONFIG.PSU__I2C0__PERIPHERAL__ENABLE" value="0"/>
+       <user_parameter  name="CONFIG.PSU__I2C0__PERIPHERAL__IO" value="MIO 14 .. 15"/>
+       <user_parameter  name="CONFIG.PSU__I2C1__PERIPHERAL__ENABLE" value="0"/>
+       <user_parameter  name="CONFIG.PSU__I2C1__PERIPHERAL__IO" value="MIO 12 .. 13"/>    
+       <user_parameter  name="CONFIG.PSU__SPI0__PERIPHERAL__ENABLE" value="0"/>
+       <user_parameter  name="CONFIG.PSU__SPI0__PERIPHERAL__IO" value="EMIO"/> 
+       <user_parameter  name="CONFIG.PSU__PSS_REF_CLK__FREQMHZ" value="33.33333"/>
+       <user_parameter  name="CONFIG.PSU__QSPI__PERIPHERAL__ENABLE" value="0"/>
+       <user_parameter  name="CONFIG.PSU__QSPI__PERIPHERAL__MODE" value="Single"/>
+       <user_parameter  name="CONFIG.PSU__QSPI__PERIPHERAL__IO" value="MIO 0 .. 5"/>
+       <user_parameter  name="CONFIG.PSU__QSPI__PERIPHERAL__DATA_MODE" value="x4"/>
+       <user_parameter  name="CONFIG.PSU__QSPI__GRP_FBCLK__ENABLE" value="0"/>
+       <user_parameter  name="CONFIG.PSU__TTC0__PERIPHERAL__ENABLE" value="0"/>
+       <user_parameter  name="CONFIG.PSU__TTC1__PERIPHERAL__ENABLE" value="0"/>
+       <user_parameter  name="CONFIG.PSU__TTC2__PERIPHERAL__ENABLE" value="0"/>
+       <user_parameter  name="CONFIG.PSU__TTC3__PERIPHERAL__ENABLE" value="0"/>
+       <user_parameter  name="CONFIG.PSU__SWDT0__PERIPHERAL__ENABLE" value="0"/>
+       <user_parameter  name="CONFIG.PSU__SWDT1__PERIPHERAL__ENABLE" value="0"/>
+       <user_parameter  name="CONFIG.PSU__UART0__PERIPHERAL__ENABLE" value="0"/>
+       <user_parameter  name="CONFIG.PSU__UART0__PERIPHERAL__IO" value="MIO 18 .. 19"/>
+       <user_parameter  name="CONFIG.PSU__UART1__PERIPHERAL__ENABLE" value="0"/>
+       <user_parameter  name="CONFIG.PSU__UART1__PERIPHERAL__IO" value="MIO 16 .. 17"/>
+       <user_parameter  name="CONFIG.PSU__USB0__PERIPHERAL__ENABLE" value="0"/>
+       <user_parameter  name="CONFIG.PSU__USB0__PERIPHERAL__IO" value="MIO 52 .. 63"/>
+       <user_parameter  name="CONFIG.PSU__USB0__RESET__ENABLE" value="0"/>
+       <user_parameter  name="CONFIG.PSU__USB0__RESET__IO" value="MIO 51"/>
+       <user_parameter  name="CONFIG.PSU__USB1__PERIPHERAL__ENABLE" value="0"/>
+       <user_parameter  name="CONFIG.PSU__USB1__PERIPHERAL__IO" value="MIO 64 .. 75"/>
+       <user_parameter  name="CONFIG.PSU__USB1__RESET__ENABLE" value="0"/>
+       <user_parameter  name="CONFIG.PSU__USB1__RESET__IO" value="MIO 51"/>
+       <user_parameter  name="CONFIG.PSU__USB3_1__PERIPHERAL__ENABLE" value="0"/>
+		     <user_parameter  name="CONFIG.PSU__USB3_1__PERIPHERAL__IO" value="GT Lane3"/>
+       <user_parameter  name="CONFIG.PSU__USB__RESET__MODE" value="Shared MIO Pin"/>	
+      <user_parameter  name="CONFIG.PSU__SATA__PERIPHERAL__ENABLE" value="0"/>
+       <user_parameter  name="CONFIG.PSU__SATA__LANE0__ENABLE" value="0"/>
+       <user_parameter  name="CONFIG.PSU__SATA__LANE0__IO" value="GT Lane2"/>
+       <user_parameter  name="CONFIG.PSU__SATA__LANE1__ENABLE" value="0"/>
+       <user_parameter  name="CONFIG.PSU__SATA__LANE1__IO" value="GT Lane1"/>
+       <user_parameter  name="CONFIG.PSU__SATA__REF_CLK_SEL" value="Ref Clk2"/>
+       <user_parameter  name="CONFIG.PSU__SATA__REF_CLK_FREQ" value="150"/>    
+       <user_parameter  name="CONFIG.PSU__PCIE__REF_CLK_SEL" value="Ref Clk0"/>
+       <user_parameter  name="CONFIG.PSU__PCIE__REF_CLK_FREQ" value="100"/>
+       <user_parameter  name="CONFIG.PSU__PCIE__PERIPHERAL__ENABLE" value="0"/>
+       <user_parameter  name="CONFIG.PSU__PCIE__PERIPHERAL__ROOTPORT_ENABLE" value="1"/>
+       <user_parameter  name="CONFIG.PSU__PCIE__PERIPHERAL__ROOTPORT_IO" value="MIO 6"/>
+       <user_parameter  name="CONFIG.PSU__PCIE__DEVICE_PORT_TYPE" value="Root Port"/>
+       <user_parameter  name="CONFIG.PSU__PCIE__CLASS_CODE_BASE" value="0x6"/>
+       <user_parameter  name="CONFIG.PSU__PCIE__CLASS_CODE_INTERFACE" value="0x0"/>
+       <user_parameter  name="CONFIG.PSU__PCIE__CLASS_CODE_SUB" value="0x4"/>
+       <user_parameter  name="CONFIG.PSU__PCIE__CLASS_CODE_VALUE" value="0x60400"/>
+       <user_parameter  name="CONFIG.PSU__PCIE__LANE0__ENABLE" value="1"/>
+       <user_parameter  name="CONFIG.PSU__PCIE__LANE0__IO" value="GT Lane0"/>
+       <user_parameter  name="CONFIG.PSU__PCIE__RESET__POLARITY" value="Active Low"/> 
+       <user_parameter  name="CONFIG.PSU__DDRC__BANK_ADDR_COUNT" value="3"/> 
+       <user_parameter  name="CONFIG.PSU__DDRC__BUS_WIDTH" value="64 Bit"/> 
+       <user_parameter  name="CONFIG.PSU__DDRC__COL_ADDR_COUNT" value="10"/> 
+       <user_parameter  name="CONFIG.PSU__DDRC__RANK_ADDR_COUNT" value="1"/> 
+       <user_parameter  name="CONFIG.PSU__DDRC__DEVICE_CAPACITY" value="8192 MBits"/> 
+       <user_parameter  name="CONFIG.PSU__DDRC__DRAM_WIDTH" value="32 Bits"/> 
+       <user_parameter  name="CONFIG.PSU__DDRC__ENABLE" value="1"/> 
+       <user_parameter  name="CONFIG.PSU__DDRC__MEMORY_TYPE" value="LPDDR 3"/> 
+       <user_parameter  name="CONFIG.PSU__DDRC__ROW_ADDR_COUNT" value="15"/> 
+       <user_parameter  name="CONFIG.PSU__DDRC__T_FAW" value="50.0"/> 
+       <user_parameter  name="CONFIG.PSU__DDRC__T_RAS_MIN" value="42"/> 
+       <user_parameter  name="CONFIG.PSU__DDRC__T_RC" value="63"/> 
+       <user_parameter  name="CONFIG.PSU__DDRC__T_RCD" value="14"/> 
+       <user_parameter  name="CONFIG.PSU__DDRC__T_RP" value="16"/> 
+       <user_parameter  name="CONFIG.PSU__DDRC__RANK_ADDR_COUNT" value="0"/>        
+       <user_parameter  name="CONFIG.PSU__DDRC__EN_2ND_CLK" value="1"/> 
+       <user_parameter  name="CONFIG.PSU__DDR__INTERFACE__FREQMHZ" value="400.000"/> 
+       <user_parameter  name="CONFIG.PSU__CRF_APB__GPU_REF_CTRL__ACT_FREQMHZ" value="499.999908"/> 
+       <user_parameter  name="CONFIG.PSU__CRF_APB__GPU_REF_CTRL__FREQMHZ" value="500"/> 
+       <user_parameter  name="CONFIG.PSU__CRF_APB__GPU_REF_CTRL__SRCSEL" value="VPLL"/> 
+       <user_parameter  name="CONFIG.PSU__CRF_APB__ACPU_CTRL__ACT_FREQMHZ" value="999.999878"/> 
+       <user_parameter  name="CONFIG.PSU__CRF_APB__ACPU_CTRL__FREQMHZ" value="1000"/> 
+      </user_parameters>
+    </ip>
+  </ip_preset>
+  
+</ip_presets>

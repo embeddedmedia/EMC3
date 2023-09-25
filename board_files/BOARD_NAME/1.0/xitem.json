@@ -1,0 +1,35 @@
+{
+  "config": {
+    "items": [
+      {
+        "infra": {
+          "name": "board_name",
+          "display": "BOARD_NAME",
+          "revision": "1.0",
+          "description": "",
+          "company": "sundance.com",
+          "company_display": "Sundance Multiprocessor Technology Ltd.",
+          "author": "sundance.com",
+          "contributors": [
+            {
+              "group": "Sundance Multiprocessor Technology Ltd.",
+              "url": "https://www.sundance.com/"
+            }
+          ],
+          "category": "Zynq UltraScale+ MPSoC/Module",
+          "website": "sundance.com/board_name",
+          "logo": "board_name.png",
+          "search-keywords": [
+            "board_name",
+            "sundance.com",
+            "board",
+            "Zynq UltraScale+ MPSoC/Module",
+            "Single Part"
+          ]
+        }
+      }
+    ]
+  },
+  "_major": 1,
+  "_minor": 0
+}

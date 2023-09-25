@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?> 
+<!-- ##################################################################### -->
+<!-- ##Sundance File Version:1.0-->
+<!-- ##Vivado Version:2022.2-->
+<!-- ##TE Last Modification:2023.09.18-->
+<!-- ##################################################################### -->
+<!-- ##general board part description-->
+<!-- ##Info: board part name: board_vendor:board_name:part0:file_version  , use all lower case-->
+<board schema_version="1.0" vendor="sundance.com" name="BOARD_NAME" display_name="BOARD_NAME" url="http://www.sundance.com" preset_file="preset.xml">
+ <images>
+  <image name="board_name.png" display_name="BOARD_NAME" sub_type="board">
+   <description>Board File Image</description>
+  </image>
+ </images>
+
+<!-- ##################################################################### -->
+<!-- ##Board PCB Revision -->
+ <compatible_board_revisions>
+  <revision id="1">1.0</revision>
+ </compatible_board_revisions>
+
+<!-- ##################################################################### -->
+<!-- ##Board File Revision -->
+ <file_version>1.0</file_version>
+
+<!-- ##################################################################### -->
+<!-- ##Board descriptions -->
+ <description>Development board ....</description>
+
+<!-- ##################################################################### -->
+<!-- ##Board components. Special component part0=fpga -->
+<!-- ##set display_name and correct part_name for fpga-->
+<!-- ##add part interfaces and corresponding component here -->
+ <components>
+  <component name="part0" display_name="BOARD_NAME" type="fpga" part_name="xczu4ev-sfvc784-1-e" pin_map_file="part0_pins.xml" vendor="xilinx.com" spec_url="www.xilinx.com">
+   <description>FPGA part on the board</description>
+   <interfaces>
+    <!--insert fpga interfaces here, see ug895 or other board part files-->
+    
+    <interface mode="master" name="ps8_fixedio" type="xilinx.com:zynq_ultra_ps_e:fixedio_rtl:1.0" of_component="ps8_fixedio" preset_proc="zynq_ultra_ps_e_preset"> 
+     <preferred_ips>
+      <preferred_ip vendor="xilinx.com" library="ip" name="zynq_ultra_ps_e" order="0"/>
+     </preferred_ips>
+    </interface>       
+   </interfaces>  
+  </component>
+  
+   <!--insert interface components here, see ug895 or other board part files-->
+   <component name="ps8_fixedio" display_name="PS8 fixed IO" type="chip" sub_type="fixed_io" major_group=""/>
+             
+  </components>
+
+<!-- ##################################################################### -->
+<!-- ##Board jtag chains for partx  -->
+ <jtag_chains>
+  <jtag_chain name="chain1">
+   <position name="0" component="part0"/>
+  </jtag_chain>
+ </jtag_chains>
+
+<!-- ##################################################################### -->
+<!-- ##connections between interfaces definition and part0_pins.xml  -->
+ <connections>
+ </connections>
+
+<!-- ##################################################################### -->
+<!-- ##Additional IO interface rules-->
+ <!-- <ip_associated_rules> -->
+  <!-- <ip_associated_rule name="default"> -->
+  <!-- </ip_associated_rule> -->
+ <!-- </ip_associated_rules> -->
+
+<!-- ##################################################################### -->
+</board>
+
+
+
+
+
+
