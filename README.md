@@ -1,11 +1,13 @@
 <img align="right" src=https://www.sundance.com/wp-content/uploads/docs/sundance_logo_105.png>
+
+# EMC3
 Welcome to the EMC3 repository.
 
 This repository stores the HALO source code and documentation.
 
 Go to the [wiki](https://github.com/SundanceMultiprocessorTechnology/EMC3/wiki) for more information.
 
-# directory structure
+# Directory Structure
 		|── board_files
 		|   |── BOARD_NAME
 		|   |   |── 1.0
