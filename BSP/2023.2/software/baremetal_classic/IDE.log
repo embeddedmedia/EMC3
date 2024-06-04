@@ -1,0 +1,239 @@
+09:28:29 DEBUG : Logs will be stored at '/home/sundance/Emilie_Projects/git/EMC3/BSP/2023.2/software/baremetal_classic/IDE.log'.
+09:28:36 INFO  : Launching XSCT server: xsct -n  -interactive /home/sundance/Emilie_Projects/git/EMC3/BSP/2023.2/software/baremetal_classic/temp_xsdb_launch_script.tcl
+09:28:39 INFO  : Registering command handlers for Vitis TCF services
+09:28:40 INFO  : XSCT server has started successfully.
+09:28:40 INFO  : Successfully done setting XSCT server connection channel  
+09:28:40 INFO  : plnx-install-location is set to ''
+09:28:41 INFO  : Platform repository initialization has completed.
+09:28:42 INFO  : Successfully done setting workspace for the tool. 
+09:28:42 INFO  : Successfully done query RDI_DATADIR 
+09:39:51 INFO  : Result from executing command 'getProjects': EMC3_platform
+09:39:51 INFO  : Result from executing command 'getPlatforms': xilinx_vck190_base_202320_1|/tools/Xilinx/Vitis/2023.2/base_platforms/xilinx_vck190_base_202320_1/xilinx_vck190_base_202320_1.xpfm;xilinx_vck190_base_dfx_202320_1|/tools/Xilinx/Vitis/2023.2/base_platforms/xilinx_vck190_base_dfx_202320_1/xilinx_vck190_base_dfx_202320_1.xpfm;xilinx_vek280_es1_base_202320_1|/tools/Xilinx/Vitis/2023.2/base_platforms/xilinx_vek280_es1_base_202320_1/xilinx_vek280_es1_base_202320_1.xpfm;xilinx_vmk180_base_202320_1|/tools/Xilinx/Vitis/2023.2/base_platforms/xilinx_vmk180_base_202320_1/xilinx_vmk180_base_202320_1.xpfm;xilinx_zcu102_base_202320_1|/tools/Xilinx/Vitis/2023.2/base_platforms/xilinx_zcu102_base_202320_1/xilinx_zcu102_base_202320_1.xpfm;xilinx_zcu102_base_dfx_202320_1|/tools/Xilinx/Vitis/2023.2/base_platforms/xilinx_zcu102_base_dfx_202320_1/xilinx_zcu102_base_dfx_202320_1.xpfm;xilinx_zcu104_base_202320_1|/tools/Xilinx/Vitis/2023.2/base_platforms/xilinx_zcu104_base_202320_1/xilinx_zcu104_base_202320_1.xpfm
+09:53:23 INFO  : Result from executing command 'getProjects': EMC3_platform
+09:53:23 INFO  : Result from executing command 'getPlatforms': EMC3_platform|/home/sundance/Emilie_Projects/git/EMC3/BSP/2023.2/software/baremetal_classic/EMC3_platform/export/EMC3_platform/EMC3_platform.xpfm;xilinx_vck190_base_202320_1|/tools/Xilinx/Vitis/2023.2/base_platforms/xilinx_vck190_base_202320_1/xilinx_vck190_base_202320_1.xpfm;xilinx_vck190_base_dfx_202320_1|/tools/Xilinx/Vitis/2023.2/base_platforms/xilinx_vck190_base_dfx_202320_1/xilinx_vck190_base_dfx_202320_1.xpfm;xilinx_vek280_es1_base_202320_1|/tools/Xilinx/Vitis/2023.2/base_platforms/xilinx_vek280_es1_base_202320_1/xilinx_vek280_es1_base_202320_1.xpfm;xilinx_vmk180_base_202320_1|/tools/Xilinx/Vitis/2023.2/base_platforms/xilinx_vmk180_base_202320_1/xilinx_vmk180_base_202320_1.xpfm;xilinx_zcu102_base_202320_1|/tools/Xilinx/Vitis/2023.2/base_platforms/xilinx_zcu102_base_202320_1/xilinx_zcu102_base_202320_1.xpfm;xilinx_zcu102_base_dfx_202320_1|/tools/Xilinx/Vitis/2023.2/base_platforms/xilinx_zcu102_base_dfx_202320_1/xilinx_zcu102_base_dfx_202320_1.xpfm;xilinx_zcu104_base_202320_1|/tools/Xilinx/Vitis/2023.2/base_platforms/xilinx_zcu104_base_202320_1/xilinx_zcu104_base_202320_1.xpfm
+09:59:23 INFO  : Checking for BSP changes to sync application flags for project 'UART_test'...
+10:00:50 INFO  : Example project xsdps_raw_example_2 has been created successfully.
+10:01:55 INFO  : Checking for BSP changes to sync application flags for project 'xsdps_raw_example_2'...
+10:42:48 INFO  : Checking for BSP changes to sync application flags for project 'xsdps_raw_example_2'...
+10:43:00 INFO  : Checking for BSP changes to sync application flags for project 'UART_test'...
+10:43:39 INFO  : Result from executing command 'getProjects': EMC3_platform
+10:43:39 INFO  : Result from executing command 'getPlatforms': EMC3_platform|/home/sundance/Emilie_Projects/git/EMC3/BSP/2023.2/software/baremetal_classic/EMC3_platform/export/EMC3_platform/EMC3_platform.xpfm;xilinx_vck190_base_202320_1|/tools/Xilinx/Vitis/2023.2/base_platforms/xilinx_vck190_base_202320_1/xilinx_vck190_base_202320_1.xpfm;xilinx_vck190_base_dfx_202320_1|/tools/Xilinx/Vitis/2023.2/base_platforms/xilinx_vck190_base_dfx_202320_1/xilinx_vck190_base_dfx_202320_1.xpfm;xilinx_vek280_es1_base_202320_1|/tools/Xilinx/Vitis/2023.2/base_platforms/xilinx_vek280_es1_base_202320_1/xilinx_vek280_es1_base_202320_1.xpfm;xilinx_vmk180_base_202320_1|/tools/Xilinx/Vitis/2023.2/base_platforms/xilinx_vmk180_base_202320_1/xilinx_vmk180_base_202320_1.xpfm;xilinx_zcu102_base_202320_1|/tools/Xilinx/Vitis/2023.2/base_platforms/xilinx_zcu102_base_202320_1/xilinx_zcu102_base_202320_1.xpfm;xilinx_zcu102_base_dfx_202320_1|/tools/Xilinx/Vitis/2023.2/base_platforms/xilinx_zcu102_base_dfx_202320_1/xilinx_zcu102_base_dfx_202320_1.xpfm;xilinx_zcu104_base_202320_1|/tools/Xilinx/Vitis/2023.2/base_platforms/xilinx_zcu104_base_202320_1/xilinx_zcu104_base_202320_1.xpfm
+10:49:15 DEBUG : Logs will be stored at '/home/sundance/Emilie_Projects/git/EMC3/BSP/2023.2/software/baremetal_classic/IDE.log'.
+10:49:16 INFO  : Launching XSCT server: xsct -n  -interactive /home/sundance/Emilie_Projects/git/EMC3/BSP/2023.2/software/baremetal_classic/temp_xsdb_launch_script.tcl
+10:49:17 INFO  : Registering command handlers for Vitis TCF services
+10:49:17 INFO  : Platform repository initialization has completed.
+10:49:17 INFO  : XSCT server has started successfully.
+10:49:17 INFO  : Successfully done setting XSCT server connection channel  
+10:49:17 INFO  : plnx-install-location is set to ''
+10:49:17 INFO  : Successfully done query RDI_DATADIR 
+10:49:17 INFO  : Successfully done setting workspace for the tool. 
+10:49:44 INFO  : Platform 'EMC3_platform' is added to custom repositories.
+10:50:42 INFO  : Result from executing command 'getProjects': EMC3_platform
+10:50:42 INFO  : Result from executing command 'getPlatforms': EMC3_platform|/home/sundance/Emilie_Projects/git/EMC3/BSP/2023.2/software/baremetal_classic/EMC3_platform/export/EMC3_platform/EMC3_platform.xpfm;xilinx_vck190_base_202320_1|/tools/Xilinx/Vitis/2023.2/base_platforms/xilinx_vck190_base_202320_1/xilinx_vck190_base_202320_1.xpfm;xilinx_vck190_base_dfx_202320_1|/tools/Xilinx/Vitis/2023.2/base_platforms/xilinx_vck190_base_dfx_202320_1/xilinx_vck190_base_dfx_202320_1.xpfm;xilinx_vek280_es1_base_202320_1|/tools/Xilinx/Vitis/2023.2/base_platforms/xilinx_vek280_es1_base_202320_1/xilinx_vek280_es1_base_202320_1.xpfm;xilinx_vmk180_base_202320_1|/tools/Xilinx/Vitis/2023.2/base_platforms/xilinx_vmk180_base_202320_1/xilinx_vmk180_base_202320_1.xpfm;xilinx_zcu102_base_202320_1|/tools/Xilinx/Vitis/2023.2/base_platforms/xilinx_zcu102_base_202320_1/xilinx_zcu102_base_202320_1.xpfm;xilinx_zcu102_base_dfx_202320_1|/tools/Xilinx/Vitis/2023.2/base_platforms/xilinx_zcu102_base_dfx_202320_1/xilinx_zcu102_base_dfx_202320_1.xpfm;xilinx_zcu104_base_202320_1|/tools/Xilinx/Vitis/2023.2/base_platforms/xilinx_zcu104_base_202320_1/xilinx_zcu104_base_202320_1.xpfm
+10:50:45 INFO  : Checking for BSP changes to sync application flags for project 'zynqmp_fsbl'...
+10:51:21 INFO  : Checking for BSP changes to sync application flags for project 'zynqmp_fsbl'...
+10:52:22 INFO  : Checking for BSP changes to sync application flags for project 'zynqmp_fsbl'...
+10:52:44 INFO  : Checking for BSP changes to sync application flags for project 'zynqmp_fsbl'...
+10:52:54 INFO  : Checking for BSP changes to sync application flags for project 'zynqmp_fsbl'...
+11:16:29 INFO  : Connected through redirection to target on host '192.168.69.94' and port '3121'.
+11:16:29 INFO  : Jtag cable 'JTAG Cable 2023.2 AAo1BIgO0' is selected.
+11:16:29 INFO  : 'jtag frequency' command is executed.
+11:16:29 INFO  : Sourcing of '/tools/Xilinx/Vitis/2023.2/scripts/vitis/util/zynqmp_utils.tcl' is done.
+11:16:29 INFO  : Context for 'APU' is selected.
+11:16:29 INFO  : System reset is completed.
+11:16:32 INFO  : 'after 3000' command is executed.
+11:16:32 INFO  : 'targets -set -filter {jtag_cable_name =~ "JTAG Cable 2023.2 AAo1BIgO0" && level==0 && jtag_device_ctx=="jsn-XSC0-AAo1BIgO0-04724093-0"}' command is executed.
+11:16:34 INFO  : Device configured successfully with "/home/sundance/Emilie_Projects/git/EMC3/BSP/2023.2/software/baremetal_classic/UART_test/_ide/bitstream/design_1_wrapper.bit"
+11:16:34 INFO  : Context for 'APU' is selected.
+11:16:34 INFO  : Hardware design and registers information is loaded from '/home/sundance/Emilie_Projects/git/EMC3/BSP/2023.2/software/baremetal_classic/EMC3_platform/export/EMC3_platform/hw/design_1_wrapper.xsa'.
+11:16:34 INFO  : 'configparams force-mem-access 1' command is executed.
+11:16:34 INFO  : Context for 'APU' is selected.
+11:16:34 INFO  : Boot mode is read from the target.
+11:16:34 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+11:16:34 INFO  : Processor reset is completed for 'psu_cortexa53_0'.
+11:16:34 INFO  : The application '/home/sundance/Emilie_Projects/git/EMC3/BSP/2023.2/software/baremetal_classic/EMC3_platform/export/EMC3_platform/sw/EMC3_platform/boot/fsbl.elf' is downloaded to processor 'psu_cortexa53_0'.
+11:16:34 INFO  : 'set bp_16_34_fsbl_bp [bpadd -addr &XFsbl_Exit]' command is executed.
+11:16:35 INFO  : 'con -block -timeout 60' command is executed.
+11:16:35 INFO  : 'bpremove $bp_16_34_fsbl_bp' command is executed.
+11:16:35 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+11:16:35 INFO  : Processor reset is completed for 'psu_cortexa53_0'.
+11:16:36 INFO  : The application '/home/sundance/Emilie_Projects/git/EMC3/BSP/2023.2/software/baremetal_classic/UART_test/Debug/UART_test.elf' is downloaded to processor 'psu_cortexa53_0'.
+11:16:36 INFO  : 'configparams force-mem-access 0' command is executed.
+11:16:36 INFO  : ----------------XSDB Script----------------
+connect -path [list tcp::1534 tcp:192.168.69.94:3121]
+source /tools/Xilinx/Vitis/2023.2/scripts/vitis/util/zynqmp_utils.tcl
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "JTAG Cable 2023.2 AAo1BIgO0" && level==0 && jtag_device_ctx=="jsn-XSC0-AAo1BIgO0-04724093-0"}
+fpga -file /home/sundance/Emilie_Projects/git/EMC3/BSP/2023.2/software/baremetal_classic/UART_test/_ide/bitstream/design_1_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw /home/sundance/Emilie_Projects/git/EMC3/BSP/2023.2/software/baremetal_classic/EMC3_platform/export/EMC3_platform/hw/design_1_wrapper.xsa -mem-ranges [list {0x80000000 0xbfffffff} {0x400000000 0x5ffffffff} {0x1000000000 0x7fffffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+set mode [expr [mrd -value 0xFF5E0200] & 0xf]
+targets -set -nocase -filter {name =~ "*A53*#0"}
+rst -processor
+dow /home/sundance/Emilie_Projects/git/EMC3/BSP/2023.2/software/baremetal_classic/EMC3_platform/export/EMC3_platform/sw/EMC3_platform/boot/fsbl.elf
+set bp_16_34_fsbl_bp [bpadd -addr &XFsbl_Exit]
+con -block -timeout 60
+bpremove $bp_16_34_fsbl_bp
+targets -set -nocase -filter {name =~ "*A53*#0"}
+rst -processor
+dow /home/sundance/Emilie_Projects/git/EMC3/BSP/2023.2/software/baremetal_classic/UART_test/Debug/UART_test.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+11:19:06 INFO  : Disconnected from the channel tcfchan#3.
+11:19:48 INFO  : Connected through redirection to target on host '192.168.69.94' and port '3121'.
+11:19:48 INFO  : Jtag cable 'JTAG Cable 2023.2 AAo1BIgO0' is selected.
+11:19:48 INFO  : 'jtag frequency' command is executed.
+11:19:48 INFO  : Sourcing of '/tools/Xilinx/Vitis/2023.2/scripts/vitis/util/zynqmp_utils.tcl' is done.
+11:19:48 INFO  : Context for 'APU' is selected.
+11:19:49 INFO  : System reset is completed.
+11:19:52 INFO  : 'after 3000' command is executed.
+11:19:52 INFO  : 'targets -set -filter {jtag_cable_name =~ "JTAG Cable 2023.2 AAo1BIgO0" && level==0 && jtag_device_ctx=="jsn-XSC0-AAo1BIgO0-04724093-0"}' command is executed.
+11:19:53 INFO  : Device configured successfully with "/home/sundance/Emilie_Projects/git/EMC3/BSP/2023.2/software/baremetal_classic/UART_test/_ide/bitstream/design_1_wrapper.bit"
+11:19:53 INFO  : Context for 'APU' is selected.
+11:19:53 INFO  : Hardware design and registers information is loaded from '/home/sundance/Emilie_Projects/git/EMC3/BSP/2023.2/software/baremetal_classic/EMC3_platform/export/EMC3_platform/hw/design_1_wrapper.xsa'.
+11:19:53 INFO  : 'configparams force-mem-access 1' command is executed.
+11:19:54 INFO  : Context for 'APU' is selected.
+11:19:54 INFO  : Boot mode is read from the target.
+11:19:54 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+11:19:54 INFO  : Processor reset is completed for 'psu_cortexa53_0'.
+11:19:54 INFO  : The application '/home/sundance/Emilie_Projects/git/EMC3/BSP/2023.2/software/baremetal_classic/EMC3_platform/export/EMC3_platform/sw/EMC3_platform/boot/fsbl.elf' is downloaded to processor 'psu_cortexa53_0'.
+11:19:54 INFO  : 'set bp_19_54_fsbl_bp [bpadd -addr &XFsbl_Exit]' command is executed.
+11:19:55 INFO  : 'con -block -timeout 60' command is executed.
+11:19:55 INFO  : 'bpremove $bp_19_54_fsbl_bp' command is executed.
+11:19:55 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+11:19:55 INFO  : Processor reset is completed for 'psu_cortexa53_0'.
+11:19:55 INFO  : The application '/home/sundance/Emilie_Projects/git/EMC3/BSP/2023.2/software/baremetal_classic/UART_test/Debug/UART_test.elf' is downloaded to processor 'psu_cortexa53_0'.
+11:19:55 INFO  : 'configparams force-mem-access 0' command is executed.
+11:19:55 INFO  : ----------------XSDB Script----------------
+connect -path [list tcp::1534 tcp:192.168.69.94:3121]
+source /tools/Xilinx/Vitis/2023.2/scripts/vitis/util/zynqmp_utils.tcl
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "JTAG Cable 2023.2 AAo1BIgO0" && level==0 && jtag_device_ctx=="jsn-XSC0-AAo1BIgO0-04724093-0"}
+fpga -file /home/sundance/Emilie_Projects/git/EMC3/BSP/2023.2/software/baremetal_classic/UART_test/_ide/bitstream/design_1_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw /home/sundance/Emilie_Projects/git/EMC3/BSP/2023.2/software/baremetal_classic/EMC3_platform/export/EMC3_platform/hw/design_1_wrapper.xsa -mem-ranges [list {0x80000000 0xbfffffff} {0x400000000 0x5ffffffff} {0x1000000000 0x7fffffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+set mode [expr [mrd -value 0xFF5E0200] & 0xf]
+targets -set -nocase -filter {name =~ "*A53*#0"}
+rst -processor
+dow /home/sundance/Emilie_Projects/git/EMC3/BSP/2023.2/software/baremetal_classic/EMC3_platform/export/EMC3_platform/sw/EMC3_platform/boot/fsbl.elf
+set bp_19_54_fsbl_bp [bpadd -addr &XFsbl_Exit]
+con -block -timeout 60
+bpremove $bp_19_54_fsbl_bp
+targets -set -nocase -filter {name =~ "*A53*#0"}
+rst -processor
+dow /home/sundance/Emilie_Projects/git/EMC3/BSP/2023.2/software/baremetal_classic/UART_test/Debug/UART_test.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+11:20:06 INFO  : Disconnected from the channel tcfchan#4.
+11:20:40 INFO  : Connected through redirection to target on host '192.168.69.94' and port '3121'.
+11:20:41 INFO  : Jtag cable 'JTAG Cable 2023.2 AAo1BIgO0' is selected.
+11:20:41 INFO  : 'jtag frequency' command is executed.
+11:20:41 INFO  : Sourcing of '/tools/Xilinx/Vitis/2023.2/scripts/vitis/util/zynqmp_utils.tcl' is done.
+11:20:41 INFO  : Context for 'APU' is selected.
+11:20:41 INFO  : System reset is completed.
+11:20:44 INFO  : 'after 3000' command is executed.
+11:20:44 INFO  : 'targets -set -filter {jtag_cable_name =~ "JTAG Cable 2023.2 AAo1BIgO0" && level==0 && jtag_device_ctx=="jsn-XSC0-AAo1BIgO0-04724093-0"}' command is executed.
+11:20:45 INFO  : Device configured successfully with "/home/sundance/Emilie_Projects/git/EMC3/BSP/2023.2/software/baremetal_classic/xsdps_raw_example_2/_ide/bitstream/design_1_wrapper.bit"
+11:20:45 INFO  : Context for 'APU' is selected.
+11:20:46 INFO  : Hardware design and registers information is loaded from '/home/sundance/Emilie_Projects/git/EMC3/BSP/2023.2/software/baremetal_classic/EMC3_platform/export/EMC3_platform/hw/design_1_wrapper.xsa'.
+11:20:46 INFO  : 'configparams force-mem-access 1' command is executed.
+11:20:46 INFO  : Context for 'APU' is selected.
+11:20:46 INFO  : Boot mode is read from the target.
+11:20:46 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+11:20:46 INFO  : Processor reset is completed for 'psu_cortexa53_0'.
+11:20:46 INFO  : The application '/home/sundance/Emilie_Projects/git/EMC3/BSP/2023.2/software/baremetal_classic/EMC3_platform/export/EMC3_platform/sw/EMC3_platform/boot/fsbl.elf' is downloaded to processor 'psu_cortexa53_0'.
+11:20:46 INFO  : 'set bp_20_46_fsbl_bp [bpadd -addr &XFsbl_Exit]' command is executed.
+11:20:47 INFO  : 'con -block -timeout 60' command is executed.
+11:20:47 INFO  : 'bpremove $bp_20_46_fsbl_bp' command is executed.
+11:20:47 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+11:20:47 INFO  : Processor reset is completed for 'psu_cortexa53_0'.
+11:20:47 INFO  : The application '/home/sundance/Emilie_Projects/git/EMC3/BSP/2023.2/software/baremetal_classic/xsdps_raw_example_2/Debug/xsdps_raw_example_2.elf' is downloaded to processor 'psu_cortexa53_0'.
+11:20:47 INFO  : 'configparams force-mem-access 0' command is executed.
+11:20:47 INFO  : ----------------XSDB Script----------------
+connect -path [list tcp::1534 tcp:192.168.69.94:3121]
+source /tools/Xilinx/Vitis/2023.2/scripts/vitis/util/zynqmp_utils.tcl
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "JTAG Cable 2023.2 AAo1BIgO0" && level==0 && jtag_device_ctx=="jsn-XSC0-AAo1BIgO0-04724093-0"}
+fpga -file /home/sundance/Emilie_Projects/git/EMC3/BSP/2023.2/software/baremetal_classic/xsdps_raw_example_2/_ide/bitstream/design_1_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw /home/sundance/Emilie_Projects/git/EMC3/BSP/2023.2/software/baremetal_classic/EMC3_platform/export/EMC3_platform/hw/design_1_wrapper.xsa -mem-ranges [list {0x80000000 0xbfffffff} {0x400000000 0x5ffffffff} {0x1000000000 0x7fffffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+set mode [expr [mrd -value 0xFF5E0200] & 0xf]
+targets -set -nocase -filter {name =~ "*A53*#0"}
+rst -processor
+dow /home/sundance/Emilie_Projects/git/EMC3/BSP/2023.2/software/baremetal_classic/EMC3_platform/export/EMC3_platform/sw/EMC3_platform/boot/fsbl.elf
+set bp_20_46_fsbl_bp [bpadd -addr &XFsbl_Exit]
+con -block -timeout 60
+bpremove $bp_20_46_fsbl_bp
+targets -set -nocase -filter {name =~ "*A53*#0"}
+rst -processor
+dow /home/sundance/Emilie_Projects/git/EMC3/BSP/2023.2/software/baremetal_classic/xsdps_raw_example_2/Debug/xsdps_raw_example_2.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+11:23:12 INFO  : Disconnected from the channel tcfchan#5.
+11:23:13 INFO  : Connected through redirection to target on host '192.168.69.94' and port '3121'.
+11:23:13 INFO  : Jtag cable 'JTAG Cable 2023.2 AAo1BIgO0' is selected.
+11:23:13 INFO  : 'jtag frequency' command is executed.
+11:23:13 INFO  : Sourcing of '/tools/Xilinx/Vitis/2023.2/scripts/vitis/util/zynqmp_utils.tcl' is done.
+11:23:13 INFO  : Context for 'APU' is selected.
+11:23:14 INFO  : System reset is completed.
+11:23:17 INFO  : 'after 3000' command is executed.
+11:23:17 INFO  : 'targets -set -filter {jtag_cable_name =~ "JTAG Cable 2023.2 AAo1BIgO0" && level==0 && jtag_device_ctx=="jsn-XSC0-AAo1BIgO0-04724093-0"}' command is executed.
+11:23:18 INFO  : Device configured successfully with "/home/sundance/Emilie_Projects/git/EMC3/BSP/2023.2/software/baremetal_classic/UART_test/_ide/bitstream/design_1_wrapper.bit"
+11:23:18 INFO  : Context for 'APU' is selected.
+11:23:18 INFO  : Hardware design and registers information is loaded from '/home/sundance/Emilie_Projects/git/EMC3/BSP/2023.2/software/baremetal_classic/EMC3_platform/export/EMC3_platform/hw/design_1_wrapper.xsa'.
+11:23:18 INFO  : 'configparams force-mem-access 1' command is executed.
+11:23:18 INFO  : Context for 'APU' is selected.
+11:23:18 INFO  : Boot mode is read from the target.
+11:23:18 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+11:23:18 INFO  : Processor reset is completed for 'psu_cortexa53_0'.
+11:23:19 INFO  : The application '/home/sundance/Emilie_Projects/git/EMC3/BSP/2023.2/software/baremetal_classic/EMC3_platform/export/EMC3_platform/sw/EMC3_platform/boot/fsbl.elf' is downloaded to processor 'psu_cortexa53_0'.
+11:23:19 INFO  : 'set bp_23_19_fsbl_bp [bpadd -addr &XFsbl_Exit]' command is executed.
+11:23:20 INFO  : 'con -block -timeout 60' command is executed.
+11:23:20 INFO  : 'bpremove $bp_23_19_fsbl_bp' command is executed.
+11:23:20 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+11:23:20 INFO  : Processor reset is completed for 'psu_cortexa53_0'.
+11:23:20 INFO  : The application '/home/sundance/Emilie_Projects/git/EMC3/BSP/2023.2/software/baremetal_classic/UART_test/Debug/UART_test.elf' is downloaded to processor 'psu_cortexa53_0'.
+11:23:20 INFO  : 'configparams force-mem-access 0' command is executed.
+11:23:20 INFO  : ----------------XSDB Script----------------
+connect -path [list tcp::1534 tcp:192.168.69.94:3121]
+source /tools/Xilinx/Vitis/2023.2/scripts/vitis/util/zynqmp_utils.tcl
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "JTAG Cable 2023.2 AAo1BIgO0" && level==0 && jtag_device_ctx=="jsn-XSC0-AAo1BIgO0-04724093-0"}
+fpga -file /home/sundance/Emilie_Projects/git/EMC3/BSP/2023.2/software/baremetal_classic/UART_test/_ide/bitstream/design_1_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw /home/sundance/Emilie_Projects/git/EMC3/BSP/2023.2/software/baremetal_classic/EMC3_platform/export/EMC3_platform/hw/design_1_wrapper.xsa -mem-ranges [list {0x80000000 0xbfffffff} {0x400000000 0x5ffffffff} {0x1000000000 0x7fffffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+set mode [expr [mrd -value 0xFF5E0200] & 0xf]
+targets -set -nocase -filter {name =~ "*A53*#0"}
+rst -processor
+dow /home/sundance/Emilie_Projects/git/EMC3/BSP/2023.2/software/baremetal_classic/EMC3_platform/export/EMC3_platform/sw/EMC3_platform/boot/fsbl.elf
+set bp_23_19_fsbl_bp [bpadd -addr &XFsbl_Exit]
+con -block -timeout 60
+bpremove $bp_23_19_fsbl_bp
+targets -set -nocase -filter {name =~ "*A53*#0"}
+rst -processor
+dow /home/sundance/Emilie_Projects/git/EMC3/BSP/2023.2/software/baremetal_classic/UART_test/Debug/UART_test.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+11:31:56 INFO  : Disconnected from the channel tcfchan#6.
+12:28:01 INFO  : Invoking Bootgen: bootgen -image output.bif -arch zynqmp -o /home/sundance/Emilie_Projects/git/EMC3/BSP/2023.2/boot/BOOT.bin -w on
+12:28:03 INFO  : Bootgen command execution is done.

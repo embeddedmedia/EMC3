@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<item key="scw_hwspec" value="/home/sundance/Emilie_Projects/git/EMC3/BSP/2023.2/firmware"/>
+	<item key="debug_files_selection" value="/home/sundance/Emilie_Projects/git/EMC3/BSP/2023.2/software/baremetal_classic/zynqmp_fsbl/Debug"/>
+	<item key="bootgen_files_selection" value="/home/sundance/Emilie_Projects/git/EMC3/BSP/2023.2/boot"/>
+	<item key="soc_flash_files_selection" value="/home/sundance/Emilie_Projects/git/EMC3/BSP/2023.2/software/baremetal_classic/zynqmp_fsbl/Debug"/>
+</section>
