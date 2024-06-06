@@ -26,3 +26,10 @@ bsp reload
 catch {bsp regenerate}
 platform generate -domains standalone_domain 
 platform generate
+platform generate -domains standalone_domain,zynqmp_fsbl,zynqmp_pmufw 
+platform active {EMC3_platform}
+bsp reload
+bsp reload
+platform clean
+platform config -updatehw {/home/sundance/Emilie_Projects/git/EMC3/BSP/2023.2/firmware/design_1_wrapper.xsa}
+platform generate

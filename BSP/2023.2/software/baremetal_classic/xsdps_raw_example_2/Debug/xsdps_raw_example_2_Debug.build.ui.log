@@ -1,6 +1,21 @@
-2024-06-04T10:42:48.31227500255-10:42:48 **** Incremental Build of configuration Debug for project xsdps_raw_example_2 ****
+2024-06-06T13:24:43.77773400255-13:24:43 **** Incremental Build of configuration Debug for project xsdps_raw_example_2 ****
 000-make all 
-000-make: Nothing to be done for 'all'.
+000-Building file: ../src/xsdps_raw_example.c
+000-Invoking: ARM v8 gcc compiler
+000-aarch64-none-elf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/xsdps_raw_example.o" -I/home/sundance/Emilie_Projects/git/EMC3/BSP/2023.2/software/baremetal_classic/EMC3_platform/export/EMC3_platform/sw/EMC3_platform/standalone_domain/bspinclude/include -MMD -MP -MF"src/xsdps_raw_example.d" -MT"src/xsdps_raw_example.o" -o "src/xsdps_raw_example.o" "../src/xsdps_raw_example.c"
+000-Finished building: ../src/xsdps_raw_example.c
+000- 
+000-Building target: xsdps_raw_example_2.elf
+000-Invoking: ARM v8 gcc linker
+000-aarch64-none-elf-gcc -Wl,-T -Wl,../src/lscript.ld -L/home/sundance/Emilie_Projects/git/EMC3/BSP/2023.2/software/baremetal_classic/EMC3_platform/export/EMC3_platform/sw/EMC3_platform/standalone_domain/bsplib/lib -o "xsdps_raw_example_2.elf" ./src/xsdps_raw_example.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilsecure,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilpm,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+000-Finished building target: xsdps_raw_example_2.elf
+000- 
+000-Invoking: ARM v8 Print Size
+000-aarch64-none-elf-size xsdps_raw_example_2.elf  |tee "xsdps_raw_example_2.elf.size"
+000-   text	   data	    bss	    dec	    hex	filename
+000-  52620	   2320	  43124	  98064	  17f10	xsdps_raw_example_2.elf
+000-Finished building: xsdps_raw_example_2.elf.size
+000- 
 00255-
-10:42:48 Build Finished (took 118ms)
+13:24:47 Build Finished (took 3s.401ms)
 

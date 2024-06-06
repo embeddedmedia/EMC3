@@ -81,11 +81,11 @@ int main(void)
 
 	Status = SdpsRawTest();
 	if (Status != XST_SUCCESS) {
-		xil_printf("SD Raw Read/ Write Test failed \r\n");
+		xil_printf("\033[0;31mSD Raw Read/ Write Test failed\033[0m \r\n");
 		return XST_FAILURE;
 	}
 
-	xil_printf("Successfully ran SD Raw Read/ Write Test \r\n");
+	xil_printf("\033[0;32mSuccessfully ran SD Raw Read/ Write Test\033[0m \r\n");
 
 	return XST_SUCCESS;
 

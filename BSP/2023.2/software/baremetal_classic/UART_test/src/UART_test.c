@@ -33,7 +33,7 @@ int main()
     	n--;
     }
 
-    print("Test UART done\n\r");
+    print("\033[0;32mTest UART done\033[0m\n\r");
     print("==============\n\r");
     //cleanup_platform();
     return 0;

@@ -1,6 +1,26 @@
-2024-06-04T10:43:00.74958300255-10:43:00 **** Incremental Build of configuration Debug for project UART_test ****
+2024-06-06T12:05:13.76452200255-12:05:13 **** Incremental Build of configuration Debug for project UART_test ****
 000-make all 
-000-make: Nothing to be done for 'all'.
+000-Building file: ../src/UART_test.c
+000-Invoking: ARM v8 gcc compiler
+000-aarch64-none-elf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/UART_test.o" -I/home/sundance/Emilie_Projects/git/EMC3/BSP/2023.2/software/baremetal_classic/EMC3_platform/export/EMC3_platform/sw/EMC3_platform/standalone_domain/bspinclude/include -MMD -MP -MF"src/UART_test.d" -MT"src/UART_test.o" -o "src/UART_test.o" "../src/UART_test.c"
+000-Finished building: ../src/UART_test.c
+000- 
+000-Building file: ../src/platform.c
+000-Invoking: ARM v8 gcc compiler
+000-aarch64-none-elf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -I/home/sundance/Emilie_Projects/git/EMC3/BSP/2023.2/software/baremetal_classic/EMC3_platform/export/EMC3_platform/sw/EMC3_platform/standalone_domain/bspinclude/include -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
+000-Finished building: ../src/platform.c
+000- 
+000-Building target: UART_test.elf
+000-Invoking: ARM v8 gcc linker
+000-aarch64-none-elf-gcc -Wl,-T -Wl,../src/lscript.ld -L/home/sundance/Emilie_Projects/git/EMC3/BSP/2023.2/software/baremetal_classic/EMC3_platform/export/EMC3_platform/sw/EMC3_platform/standalone_domain/bsplib/lib -o "UART_test.elf" ./src/UART_test.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilsecure,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilpm,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+000-Finished building target: UART_test.elf
+000- 
+000-Invoking: ARM v8 Print Size
+000-aarch64-none-elf-size UART_test.elf  |tee "UART_test.elf.size"
+000-   text	   data	    bss	    dec	    hex	filename
+000-  33349	   2176	  20651	  56176	   db70	UART_test.elf
+000-Finished building: UART_test.elf.size
+000- 
 00255-
-10:43:00 Build Finished (took 119ms)
+12:05:14 Build Finished (took 1s.67ms)
 

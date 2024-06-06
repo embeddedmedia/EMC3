@@ -237,3 +237,28 @@ configparams force-mem-access 0
 11:31:56 INFO  : Disconnected from the channel tcfchan#6.
 12:28:01 INFO  : Invoking Bootgen: bootgen -image output.bif -arch zynqmp -o /home/sundance/Emilie_Projects/git/EMC3/BSP/2023.2/boot/BOOT.bin -w on
 12:28:03 INFO  : Bootgen command execution is done.
+11:35:59 DEBUG : Logs will be stored at '/home/sundance/Emilie_Projects/git/EMC3/BSP/2023.2/software/baremetal_classic/IDE.log'.
+11:35:59 INFO  : Launching XSCT server: xsct -n  -interactive /home/sundance/Emilie_Projects/git/EMC3/BSP/2023.2/software/baremetal_classic/temp_xsdb_launch_script.tcl
+11:36:02 INFO  : XSCT server has started successfully.
+11:36:02 INFO  : plnx-install-location is set to ''
+11:36:02 INFO  : Successfully done setting XSCT server connection channel  
+11:36:02 INFO  : Successfully done setting workspace for the tool. 
+11:36:03 INFO  : Platform repository initialization has completed.
+11:36:03 INFO  : Successfully done query RDI_DATADIR 
+11:36:04 INFO  : Registering command handlers for Vitis TCF services
+11:37:15 INFO  : Result from executing command 'getProjects': EMC3_platform
+11:37:15 INFO  : Result from executing command 'getPlatforms': EMC3_platform|/home/sundance/Emilie_Projects/git/EMC3/BSP/2023.2/software/baremetal_classic/EMC3_platform/export/EMC3_platform/EMC3_platform.xpfm;xilinx_vck190_base_202320_1|/tools/Xilinx/Vitis/2023.2/base_platforms/xilinx_vck190_base_202320_1/xilinx_vck190_base_202320_1.xpfm;xilinx_vck190_base_dfx_202320_1|/tools/Xilinx/Vitis/2023.2/base_platforms/xilinx_vck190_base_dfx_202320_1/xilinx_vck190_base_dfx_202320_1.xpfm;xilinx_vek280_es1_base_202320_1|/tools/Xilinx/Vitis/2023.2/base_platforms/xilinx_vek280_es1_base_202320_1/xilinx_vek280_es1_base_202320_1.xpfm;xilinx_vmk180_base_202320_1|/tools/Xilinx/Vitis/2023.2/base_platforms/xilinx_vmk180_base_202320_1/xilinx_vmk180_base_202320_1.xpfm;xilinx_zcu102_base_202320_1|/tools/Xilinx/Vitis/2023.2/base_platforms/xilinx_zcu102_base_202320_1/xilinx_zcu102_base_202320_1.xpfm;xilinx_zcu102_base_dfx_202320_1|/tools/Xilinx/Vitis/2023.2/base_platforms/xilinx_zcu102_base_dfx_202320_1/xilinx_zcu102_base_dfx_202320_1.xpfm;xilinx_zcu104_base_202320_1|/tools/Xilinx/Vitis/2023.2/base_platforms/xilinx_zcu104_base_202320_1/xilinx_zcu104_base_202320_1.xpfm
+11:41:21 INFO  : Invoking Bootgen: bootgen -image output.bif -arch zynqmp -o /home/sundance/Emilie_Projects/git/EMC3/BSP/2023.2/boot/BOOT.bin -w on
+11:41:24 INFO  : Bootgen command execution is done.
+12:37:03 INFO  : Invoking Bootgen: bootgen -image output.bif -arch zynqmp -o /home/sundance/Emilie_Projects/git/EMC3/BSP/2023.2/boot/BOOT.bin -w on
+12:37:05 INFO  : Bootgen command execution is done.
+13:01:19 ERROR : (XSDB Server)wrong # args: should be "source ?-encoding name? fileName"
+
+13:15:02 INFO  : Checking for BSP changes to sync application flags for project 'xsdps_raw_example_2'...
+13:15:02 INFO  : Updating application flags with new BSP settings...
+13:15:03 INFO  : Successfully updated application flags for project xsdps_raw_example_2.
+13:15:09 ERROR : (XSDB Server)readelf: Error: '/home/sundance/Emilie_Projects/git/EMC3/BSP/2023.2/software/baremetal_classic/EMC3_platform/export/EMC3_platform/sw/fsbl.elf': No such file
+
+13:15:51 INFO  : Checking for BSP changes to sync application flags for project 'UART_test'...
+13:15:51 INFO  : Updating application flags with new BSP settings...
+13:15:51 INFO  : Successfully updated application flags for project UART_test.

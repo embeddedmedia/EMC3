@@ -35,7 +35,7 @@ all: zynqmp_fsbl.elf secondary-outputs
 zynqmp_fsbl.elf: $(OBJS) ../src/lscript.ld $(USER_OBJS)
 	@echo 'Building target: $@'
 	@echo 'Invoking: ARM v8 gcc linker'
-	aarch64-none-elf-gcc -n -Wl,-T -Wl,../src/lscript.ld -L/home/sundance/Emilie_Projects/git/EMC3/BSP/2023.2/software/baremetal_classic/EMC3_platform/export/EMC3_platform/sw/EMC3_platform/standalone_domain/bsplib/lib -o "zynqmp_fsbl.elf" $(OBJS) $(USER_OBJS) $(LIBS)
+	aarch64-none-elf-gcc -n -Wl,-T -Wl,../src/lscript.ld -o "zynqmp_fsbl.elf" $(OBJS) $(USER_OBJS) $(LIBS)
 	@echo 'Finished building target: $@'
 	@echo ' '
 

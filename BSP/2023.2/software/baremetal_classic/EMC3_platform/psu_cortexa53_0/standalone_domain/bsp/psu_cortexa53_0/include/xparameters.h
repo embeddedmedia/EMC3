@@ -923,6 +923,59 @@
 
 /******************************************************************/
 
+/* Definitions for driver GPIO */
+#define XPAR_XGPIO_NUM_INSTANCES 3
+
+/* Definitions for peripheral AXI_GPIO_LEDS */
+#define XPAR_AXI_GPIO_LEDS_BASEADDR 0xA0010000
+#define XPAR_AXI_GPIO_LEDS_HIGHADDR 0xA001FFFF
+#define XPAR_AXI_GPIO_LEDS_DEVICE_ID 0
+#define XPAR_AXI_GPIO_LEDS_INTERRUPT_PRESENT 0
+#define XPAR_AXI_GPIO_LEDS_IS_DUAL 0
+
+
+/* Definitions for peripheral AXI_GPIO_RESETS */
+#define XPAR_AXI_GPIO_RESETS_BASEADDR 0xA0000000
+#define XPAR_AXI_GPIO_RESETS_HIGHADDR 0xA000FFFF
+#define XPAR_AXI_GPIO_RESETS_DEVICE_ID 1
+#define XPAR_AXI_GPIO_RESETS_INTERRUPT_PRESENT 0
+#define XPAR_AXI_GPIO_RESETS_IS_DUAL 0
+
+
+/* Definitions for peripheral AXI_GPIO_RPI_ENABLE */
+#define XPAR_AXI_GPIO_RPI_ENABLE_BASEADDR 0xA0020000
+#define XPAR_AXI_GPIO_RPI_ENABLE_HIGHADDR 0xA002FFFF
+#define XPAR_AXI_GPIO_RPI_ENABLE_DEVICE_ID 2
+#define XPAR_AXI_GPIO_RPI_ENABLE_INTERRUPT_PRESENT 0
+#define XPAR_AXI_GPIO_RPI_ENABLE_IS_DUAL 0
+
+
+/******************************************************************/
+
+/* Canonical definitions for peripheral AXI_GPIO_LEDS */
+#define XPAR_GPIO_0_BASEADDR 0xA0010000
+#define XPAR_GPIO_0_HIGHADDR 0xA001FFFF
+#define XPAR_GPIO_0_DEVICE_ID XPAR_AXI_GPIO_LEDS_DEVICE_ID
+#define XPAR_GPIO_0_INTERRUPT_PRESENT 0
+#define XPAR_GPIO_0_IS_DUAL 0
+
+/* Canonical definitions for peripheral AXI_GPIO_RESETS */
+#define XPAR_GPIO_1_BASEADDR 0xA0000000
+#define XPAR_GPIO_1_HIGHADDR 0xA000FFFF
+#define XPAR_GPIO_1_DEVICE_ID XPAR_AXI_GPIO_RESETS_DEVICE_ID
+#define XPAR_GPIO_1_INTERRUPT_PRESENT 0
+#define XPAR_GPIO_1_IS_DUAL 0
+
+/* Canonical definitions for peripheral AXI_GPIO_RPI_ENABLE */
+#define XPAR_GPIO_2_BASEADDR 0xA0020000
+#define XPAR_GPIO_2_HIGHADDR 0xA002FFFF
+#define XPAR_GPIO_2_DEVICE_ID XPAR_AXI_GPIO_RPI_ENABLE_DEVICE_ID
+#define XPAR_GPIO_2_INTERRUPT_PRESENT 0
+#define XPAR_GPIO_2_IS_DUAL 0
+
+
+/******************************************************************/
+
 /* Definitions for driver GPIOPS */
 #define XPAR_XGPIOPS_NUM_INSTANCES 1
 
@@ -1392,7 +1445,7 @@
 /******************************************************************/
 
 /* Definitions for driver UARTPS */
-#define XPAR_XUARTPS_NUM_INSTANCES 1
+#define XPAR_XUARTPS_NUM_INSTANCES 2
 
 /* Definitions for peripheral PSU_UART_0 */
 #define XPAR_PSU_UART_0_DEVICE_ID 0
@@ -1400,6 +1453,14 @@
 #define XPAR_PSU_UART_0_HIGHADDR 0xFF00FFFF
 #define XPAR_PSU_UART_0_UART_CLK_FREQ_HZ 99999001
 #define XPAR_PSU_UART_0_HAS_MODEM 0
+
+
+/* Definitions for peripheral PSU_UART_1 */
+#define XPAR_PSU_UART_1_DEVICE_ID 1
+#define XPAR_PSU_UART_1_BASEADDR 0xFF010000
+#define XPAR_PSU_UART_1_HIGHADDR 0xFF01FFFF
+#define XPAR_PSU_UART_1_UART_CLK_FREQ_HZ 99999001
+#define XPAR_PSU_UART_1_HAS_MODEM 0
 
 
 /******************************************************************/
@@ -1411,11 +1472,20 @@
 #define XPAR_XUARTPS_0_UART_CLK_FREQ_HZ 99999001
 #define XPAR_XUARTPS_0_HAS_MODEM 0
 
+/* Canonical definitions for peripheral PSU_UART_1 */
+#define XPAR_XUARTPS_1_DEVICE_ID XPAR_PSU_UART_1_DEVICE_ID
+#define XPAR_XUARTPS_1_BASEADDR 0xFF010000
+#define XPAR_XUARTPS_1_HIGHADDR 0xFF01FFFF
+#define XPAR_XUARTPS_1_UART_CLK_FREQ_HZ 99999001
+#define XPAR_XUARTPS_1_HAS_MODEM 0
+
 
 /******************************************************************/
 
 /* Definition for input Clock */
 #define XPAR_PSU_UART_0_REF_CLK UART0_REF
+/* Definition for input Clock */
+#define XPAR_PSU_UART_1_REF_CLK UART1_REF
 /* Definitions for driver USBPSU */
 #define XPAR_XUSBPSU_NUM_INSTANCES 1
 

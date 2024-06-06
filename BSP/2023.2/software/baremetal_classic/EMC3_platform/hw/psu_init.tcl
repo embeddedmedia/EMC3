@@ -707,6 +707,25 @@ set psu_clock_init_data {
 		# This register controls this reference clock
 		#(OFFSET, MASK, VALUE)      (0XFF5E0074, 0x013F3F07U ,0x01010F00U)  */
     mask_write 0XFF5E0074 0x013F3F07 0x01010F00
+		# Register : UART1_REF_CTRL @ 0XFF5E0078</p>
+
+		# Clock active signal. Switch to 0 to disable the clock
+		# PSU_CRL_APB_UART1_REF_CTRL_CLKACT                                               0x1
+
+		# 6 bit divider
+		# PSU_CRL_APB_UART1_REF_CTRL_DIVISOR1                                             0x1
+
+		# 6 bit divider
+		# PSU_CRL_APB_UART1_REF_CTRL_DIVISOR0                                             0xf
+
+		# 000 = IOPLL; 010 = RPLL; 011 = DPLL; (This signal may only be toggled af
+    # ter 4 cycles of the old clock and 4 cycles of the new clock. This is not
+    #  usually an issue, but designers must be aware.)
+		# PSU_CRL_APB_UART1_REF_CTRL_SRCSEL                                               0x0
+
+		# This register controls this reference clock
+		#(OFFSET, MASK, VALUE)      (0XFF5E0078, 0x013F3F07U ,0x01010F00U)  */
+    mask_write 0XFF5E0078 0x013F3F07 0x01010F00
 		# Register : I2C1_REF_CTRL @ 0XFF5E0124</p>
 
 		# Clock active signal. Switch to 0 to disable the clock
@@ -14216,10 +14235,13 @@ set psu_peripherals_init_data {
 		# Block level reset
 		# PSU_CRL_APB_RST_LPD_IOU2_UART0_RESET                                            0
 
+		# Block level reset
+		# PSU_CRL_APB_RST_LPD_IOU2_UART1_RESET                                            0
+
 		# Software control register for the IOU block. Each bit will cause a singl
     # erperipheral or part of the peripheral to be reset.
-		#(OFFSET, MASK, VALUE)      (0XFF5E0238, 0x00000002U ,0x00000000U)  */
-    mask_write 0XFF5E0238 0x00000002 0x00000000
+		#(OFFSET, MASK, VALUE)      (0XFF5E0238, 0x00000006U ,0x00000000U)  */
+    mask_write 0XFF5E0238 0x00000006 0x00000000
 		# : UART BAUD RATE
 		# Register : Baud_rate_divider_reg0 @ 0XFF000034</p>
 
@@ -14311,6 +14333,96 @@ set psu_peripherals_init_data {
 		# UART Mode Register
 		#(OFFSET, MASK, VALUE)      (0XFF000004, 0x000003FFU ,0x00000020U)  */
     mask_write 0XFF000004 0x000003FF 0x00000020
+		# Register : Baud_rate_divider_reg0 @ 0XFF010034</p>
+
+		# Baud rate divider value: 0 - 3: ignored 4 - 255: Baud rate
+		# PSU_UART1_BAUD_RATE_DIVIDER_REG0_BDIV                                           0x6
+
+		# Baud Rate Divider Register
+		#(OFFSET, MASK, VALUE)      (0XFF010034, 0x000000FFU ,0x00000006U)  */
+    mask_write 0XFF010034 0x000000FF 0x00000006
+		# Register : Baud_rate_gen_reg0 @ 0XFF010018</p>
+
+		# Baud Rate Clock Divisor Value: 0: Disables baud_sample 1: Clock divisor
+    # bypass (baud_sample = sel_clk) 2 - 65535: baud_sample
+		# PSU_UART1_BAUD_RATE_GEN_REG0_CD                                                 0x7c
+
+		# Baud Rate Generator Register.
+		#(OFFSET, MASK, VALUE)      (0XFF010018, 0x0000FFFFU ,0x0000007CU)  */
+    mask_write 0XFF010018 0x0000FFFF 0x0000007C
+		# Register : Control_reg0 @ 0XFF010000</p>
+
+		# Stop transmitter break: 0: no affect 1: stop transmission of the break a
+    # fter a minimum of one character length and transmit a high level during
+    # 12 bit periods. It can be set regardless of the value of STTBRK.
+		# PSU_UART1_CONTROL_REG0_STPBRK                                                   0x0
+
+		# Start transmitter break: 0: no affect 1: start to transmit a break after
+    #  the characters currently present in the FIFO and the transmit shift reg
+    # ister have been transmitted. It can only be set if STPBRK (Stop transmit
+    # ter break) is not high.
+		# PSU_UART1_CONTROL_REG0_STTBRK                                                   0x0
+
+		# Restart receiver timeout counter: 1: receiver timeout counter is restart
+    # ed. This bit is self clearing once the restart has completed.
+		# PSU_UART1_CONTROL_REG0_RSTTO                                                    0x0
+
+		# Transmit disable: 0: enable transmitter 1: disable transmitter
+		# PSU_UART1_CONTROL_REG0_TXDIS                                                    0x0
+
+		# Transmit enable: 0: disable transmitter 1: enable transmitter, provided
+    # the TXDIS field is set to 0.
+		# PSU_UART1_CONTROL_REG0_TXEN                                                     0x1
+
+		# Receive disable: 0: enable 1: disable, regardless of the value of RXEN
+		# PSU_UART1_CONTROL_REG0_RXDIS                                                    0x0
+
+		# Receive enable: 0: disable 1: enable When set to one, the receiver logic
+    #  is enabled, provided the RXDIS field is set to zero.
+		# PSU_UART1_CONTROL_REG0_RXEN                                                     0x1
+
+		# Software reset for Tx data path: 0: no affect 1: transmitter logic is re
+    # set and all pending transmitter data is discarded This bit is self clear
+    # ing once the reset has completed.
+		# PSU_UART1_CONTROL_REG0_TXRES                                                    0x1
+
+		# Software reset for Rx data path: 0: no affect 1: receiver logic is reset
+    #  and all pending receiver data is discarded. This bit is self clearing o
+    # nce the reset has completed.
+		# PSU_UART1_CONTROL_REG0_RXRES                                                    0x1
+
+		# UART Control Register
+		#(OFFSET, MASK, VALUE)      (0XFF010000, 0x000001FFU ,0x00000017U)  */
+    mask_write 0XFF010000 0x000001FF 0x00000017
+		# Register : mode_reg0 @ 0XFF010004</p>
+
+		# Channel mode: Defines the mode of operation of the UART. 00: normal 01:
+    # automatic echo 10: local loopback 11: remote loopback
+		# PSU_UART1_MODE_REG0_CHMODE                                                      0x0
+
+		# Number of stop bits: Defines the number of stop bits to detect on receiv
+    # e and to generate on transmit. 00: 1 stop bit 01: 1.5 stop bits 10: 2 st
+    # op bits 11: reserved
+		# PSU_UART1_MODE_REG0_NBSTOP                                                      0x0
+
+		# Parity type select: Defines the expected parity to check on receive and
+    # the parity to generate on transmit. 000: even parity 001: odd parity 010
+    # : forced to 0 parity (space) 011: forced to 1 parity (mark) 1xx: no pari
+    # ty
+		# PSU_UART1_MODE_REG0_PAR                                                         0x4
+
+		# Character length select: Defines the number of bits in each character. 1
+    # 1: 6 bits 10: 7 bits 0x: 8 bits
+		# PSU_UART1_MODE_REG0_CHRL                                                        0x0
+
+		# Clock source select: This field defines whether a pre-scalar of 8 is app
+    # lied to the baud rate generator input clock. 0: clock source is uart_ref
+    # _clk 1: clock source is uart_ref_clk/8
+		# PSU_UART1_MODE_REG0_CLKS                                                        0x0
+
+		# UART Mode Register
+		#(OFFSET, MASK, VALUE)      (0XFF010004, 0x000003FFU ,0x00000020U)  */
+    mask_write 0XFF010004 0x000003FF 0x00000020
 		# : GPIO
 		# Register : RST_LPD_IOU2 @ 0XFF5E0238</p>
 
@@ -15198,11 +15310,11 @@ set psu_serdes_init_data {
     #  0x9 - 27MHz, 0xA - 38.4MHz, 0xB - 40MHz, 0xC - 52MHz, 0xD - 100MHz, 0xE
     #  - 108MHz, 0xF - 125MHz, 0x10 - 135MHz, 0x11 - 150 MHz. 0x12 to 0x1F - R
     # eserved
-		# PSU_SERDES_PLL_REF_SEL2_PLLREFSEL2                                              0x11
+		# PSU_SERDES_PLL_REF_SEL2_PLLREFSEL2                                              0xF
 
 		# PLL2 Reference Selection Register
-		#(OFFSET, MASK, VALUE)      (0XFD410008, 0x0000001FU ,0x00000011U)  */
-    mask_write 0XFD410008 0x0000001F 0x00000011
+		#(OFFSET, MASK, VALUE)      (0XFD410008, 0x0000001FU ,0x0000000FU)  */
+    mask_write 0XFD410008 0x0000001F 0x0000000F
 		# Register : PLL_REF_SEL3 @ 0XFD41000C</p>
 
 		# PLL3 Reference Selection. 0x0 - 5MHz, 0x1 - 9.6MHz, 0x2 - 10MHz, 0x3 - 1
@@ -15255,11 +15367,11 @@ set psu_serdes_init_data {
 		# Register : L2_PLL_SS_STEPS_0_LSB @ 0XFD40A368</p>
 
 		# Spread Spectrum No of Steps [7:0]
-		# PSU_SERDES_L2_PLL_SS_STEPS_0_LSB_SS_NUM_OF_STEPS_0_LSB                          0x18
+		# PSU_SERDES_L2_PLL_SS_STEPS_0_LSB_SS_NUM_OF_STEPS_0_LSB                          0xE0
 
 		# Spread Spectrum No of Steps bits 7:0
-		#(OFFSET, MASK, VALUE)      (0XFD40A368, 0x000000FFU ,0x00000018U)  */
-    mask_write 0XFD40A368 0x000000FF 0x00000018
+		#(OFFSET, MASK, VALUE)      (0XFD40A368, 0x000000FFU ,0x000000E0U)  */
+    mask_write 0XFD40A368 0x000000FF 0x000000E0
 		# Register : L2_PLL_SS_STEPS_1_MSB @ 0XFD40A36C</p>
 
 		# Spread Spectrum No of Steps [10:8]
@@ -15341,27 +15453,27 @@ set psu_serdes_init_data {
 		# Register : L2_PLL_SS_STEP_SIZE_0_LSB @ 0XFD40A370</p>
 
 		# Step Size for Spread Spectrum [7:0]
-		# PSU_SERDES_L2_PLL_SS_STEP_SIZE_0_LSB_SS_STEP_SIZE_0_LSB                         0xD3
+		# PSU_SERDES_L2_PLL_SS_STEP_SIZE_0_LSB_SS_STEP_SIZE_0_LSB                         0xC9
 
 		# Step Size for Spread Spectrum LSB
-		#(OFFSET, MASK, VALUE)      (0XFD40A370, 0x000000FFU ,0x000000D3U)  */
-    mask_write 0XFD40A370 0x000000FF 0x000000D3
+		#(OFFSET, MASK, VALUE)      (0XFD40A370, 0x000000FFU ,0x000000C9U)  */
+    mask_write 0XFD40A370 0x000000FF 0x000000C9
 		# Register : L2_PLL_SS_STEP_SIZE_1 @ 0XFD40A374</p>
 
 		# Step Size for Spread Spectrum [15:8]
-		# PSU_SERDES_L2_PLL_SS_STEP_SIZE_1_SS_STEP_SIZE_1                                 0xDA
+		# PSU_SERDES_L2_PLL_SS_STEP_SIZE_1_SS_STEP_SIZE_1                                 0xD2
 
 		# Step Size for Spread Spectrum 1
-		#(OFFSET, MASK, VALUE)      (0XFD40A374, 0x000000FFU ,0x000000DAU)  */
-    mask_write 0XFD40A374 0x000000FF 0x000000DA
+		#(OFFSET, MASK, VALUE)      (0XFD40A374, 0x000000FFU ,0x000000D2U)  */
+    mask_write 0XFD40A374 0x000000FF 0x000000D2
 		# Register : L2_PLL_SS_STEP_SIZE_2 @ 0XFD40A378</p>
 
 		# Step Size for Spread Spectrum [23:16]
-		# PSU_SERDES_L2_PLL_SS_STEP_SIZE_2_SS_STEP_SIZE_2                                 0x2
+		# PSU_SERDES_L2_PLL_SS_STEP_SIZE_2_SS_STEP_SIZE_2                                 0x1
 
 		# Step Size for Spread Spectrum 2
-		#(OFFSET, MASK, VALUE)      (0XFD40A378, 0x000000FFU ,0x00000002U)  */
-    mask_write 0XFD40A378 0x000000FF 0x00000002
+		#(OFFSET, MASK, VALUE)      (0XFD40A378, 0x000000FFU ,0x00000001U)  */
+    mask_write 0XFD40A378 0x000000FF 0x00000001
 		# Register : L2_PLL_SS_STEP_SIZE_3_MSB @ 0XFD40A37C</p>
 
 		# Step Size for Spread Spectrum [25:24]
@@ -15656,19 +15768,19 @@ set psu_serdes_init_data {
 
 		# IQ ILL F0 CALCODE bypass value. MPHY : G1a, PCIE : Gen 1, SATA : Gen1 ,
     # USB3 : SS
-		# PSU_SERDES_L2_TM_IQ_ILL1_ILL_BYPASS_IQ_CALCODE_F0                               0x96
+		# PSU_SERDES_L2_TM_IQ_ILL1_ILL_BYPASS_IQ_CALCODE_F0                               0x7D
 
 		# iqpi cal code
-		#(OFFSET, MASK, VALUE)      (0XFD4098F8, 0x000000FFU ,0x00000096U)  */
-    mask_write 0XFD4098F8 0x000000FF 0x00000096
+		#(OFFSET, MASK, VALUE)      (0XFD4098F8, 0x000000FFU ,0x0000007DU)  */
+    mask_write 0XFD4098F8 0x000000FF 0x0000007D
 		# Register : L2_TM_IQ_ILL2 @ 0XFD4098FC</p>
 
 		# IQ ILL F1 CALCODE bypass value. MPHY : G1b, PCIE : Gen2, SATA: Gen2
-		# PSU_SERDES_L2_TM_IQ_ILL2_ILL_BYPASS_IQ_CALCODE_F1                               0x96
+		# PSU_SERDES_L2_TM_IQ_ILL2_ILL_BYPASS_IQ_CALCODE_F1                               0x7D
 
 		# iqpi cal code
-		#(OFFSET, MASK, VALUE)      (0XFD4098FC, 0x000000FFU ,0x00000096U)  */
-    mask_write 0XFD4098FC 0x000000FF 0x00000096
+		#(OFFSET, MASK, VALUE)      (0XFD4098FC, 0x000000FFU ,0x0000007DU)  */
+    mask_write 0XFD4098FC 0x000000FF 0x0000007D
 		# Register : L2_TM_ILL12 @ 0XFD409990</p>
 
 		# G1A pll ctr bypass value
@@ -15705,11 +15817,11 @@ set psu_serdes_init_data {
 		# Register : L2_TM_IQ_ILL3 @ 0XFD409900</p>
 
 		# IQ ILL F2CALCODE bypass value. MPHY : G2a, SATA : Gen3
-		# PSU_SERDES_L2_TM_IQ_ILL3_ILL_BYPASS_IQ_CALCODE_F2                               0x96
+		# PSU_SERDES_L2_TM_IQ_ILL3_ILL_BYPASS_IQ_CALCODE_F2                               0x7D
 
 		# iqpi cal code
-		#(OFFSET, MASK, VALUE)      (0XFD409900, 0x000000FFU ,0x00000096U)  */
-    mask_write 0XFD409900 0x000000FF 0x00000096
+		#(OFFSET, MASK, VALUE)      (0XFD409900, 0x000000FFU ,0x0000007DU)  */
+    mask_write 0XFD409900 0x000000FF 0x0000007D
 		# Register : L2_TM_E_ILL3 @ 0XFD40992C</p>
 
 		# E ILL F2CALCODE bypass value. MPHY : G2a, SATA : Gen3
@@ -16436,10 +16548,10 @@ set psu_resetout_init_data {
 		# Register : PP2C @ 0XFD0C00AC</p>
 
 		# CIBGMN: COMINIT Burst Gap Minimum.
-		# PSU_SATA_AHCI_VENDOR_PP2C_CIBGMN                                                0x1B
+		# PSU_SATA_AHCI_VENDOR_PP2C_CIBGMN                                                0x18
 
 		# CIBGMX: COMINIT Burst Gap Maximum.
-		# PSU_SATA_AHCI_VENDOR_PP2C_CIBGMX                                                0x4D
+		# PSU_SATA_AHCI_VENDOR_PP2C_CIBGMX                                                0x40
 
 		# CIBGN: COMINIT Burst Gap Nominal.
 		# PSU_SATA_AHCI_VENDOR_PP2C_CIBGN                                                 0x18
@@ -16451,15 +16563,15 @@ set psu_resetout_init_data {
     # f the Phy Control OOB timing for the COMINIT parameters for either Port
     # 0 or Port 1. The Port configured is controlled by the value programmed i
     # nto the Port Config Register.
-		#(OFFSET, MASK, VALUE)      (0XFD0C00AC, 0xFFFFFFFFU ,0x28184D1BU)  */
-    mask_write 0XFD0C00AC 0xFFFFFFFF 0x28184D1B
+		#(OFFSET, MASK, VALUE)      (0XFD0C00AC, 0xFFFFFFFFU ,0x28184018U)  */
+    mask_write 0XFD0C00AC 0xFFFFFFFF 0x28184018
 		# Register : PP3C @ 0XFD0C00B0</p>
 
 		# CWBGMN: COMWAKE Burst Gap Minimum.
 		# PSU_SATA_AHCI_VENDOR_PP3C_CWBGMN                                                0x06
 
 		# CWBGMX: COMWAKE Burst Gap Maximum.
-		# PSU_SATA_AHCI_VENDOR_PP3C_CWBGMX                                                0x19
+		# PSU_SATA_AHCI_VENDOR_PP3C_CWBGMX                                                0x14
 
 		# CWBGN: COMWAKE Burst Gap Nominal.
 		# PSU_SATA_AHCI_VENDOR_PP3C_CWBGN                                                 0x08
@@ -16471,8 +16583,8 @@ set psu_resetout_init_data {
     #  the Phy Control OOB timing for the COMWAKE parameters for either Port 0
     #  or Port 1. The Port configured is controlled by the value programmed in
     # to the Port Config Register.
-		#(OFFSET, MASK, VALUE)      (0XFD0C00B0, 0xFFFFFFFFU ,0x0E081906U)  */
-    mask_write 0XFD0C00B0 0xFFFFFFFF 0x0E081906
+		#(OFFSET, MASK, VALUE)      (0XFD0C00B0, 0xFFFFFFFFU ,0x0E081406U)  */
+    mask_write 0XFD0C00B0 0xFFFFFFFF 0x0E081406
 		# Register : PP4C @ 0XFD0C00B4</p>
 
 		# BMX: COM Burst Maximum.

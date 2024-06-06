@@ -18,6 +18,7 @@ options=(
 	1 "Test UART"
 	2 "Test SD"
 	3 "Boot petalinux from JTAG"
+	4 "Program QSPI"
 	q "Quit")
 
 choices=$("${cmd[@]}" "${options[@]}" 2>&1 >/dev/tty)
@@ -44,6 +45,11 @@ do
 	
 	3)
 	./jtag_petalinux.sh $JTAG_IP $JTAG_POD
+	./test_menu.sh
+	;;
+	
+	4)
+	./program_qspi.sh $JTAG_IP
 	./test_menu.sh
 	;;
         
