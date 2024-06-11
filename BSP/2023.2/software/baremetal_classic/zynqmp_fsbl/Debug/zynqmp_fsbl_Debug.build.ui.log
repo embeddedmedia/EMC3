@@ -1,13 +1,0 @@
-2024-06-06T13:25:16.6743900255-13:25:16 **** Incremental Build of configuration Debug for project zynqmp_fsbl ****
-000-make all 
-000-Building file: ../src/psu_init.c
-000-Invoking: ARM v8 gcc compiler
-000-aarch64-none-elf-gcc -DARMA53_64 -Wall -Os -c -fmessage-length=0 -MT"src/psu_init.o" -Os -flto -ffat-lto-objects -MMD -MP -MF"src/psu_init.d" -MT"src/psu_init.o" -o "src/psu_init.o" "../src/psu_init.c"
-000/zynqmp_fsbl/src/psu_init.c15-1-1fatal error: xil_io.h: No such file or directory2-../src/psu_init.c:15:10: fatal error: xil_io.h: No such file or directory
-000-   15 | #include <xil_io.h>
-000-      |          ^~~~~~~~~~
-000-compilation terminated.
-000/zynqmp_fsbl0-1-1make: *** [src/subdir.mk:99: src/psu_init.o] Error 12-make: *** [src/subdir.mk:99: src/psu_init.o] Error 1
-00255-
-13:25:18 Build Finished (took 1s.959ms)
-

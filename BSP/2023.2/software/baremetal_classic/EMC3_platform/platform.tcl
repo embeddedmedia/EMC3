@@ -15,21 +15,18 @@ platform create -name {EMC3_platform}\
 platform write
 platform generate -domains 
 platform active {EMC3_platform}
-platform generate
 bsp reload
+bsp config extra_compiler_flags "-g -Wall -Wextra -fno-tree-loop-distribute-patterns -DNDEBUG"
 bsp setlib -name xilsecure -ver 5.2
 bsp setlib -name xilpm -ver 5.1
 bsp setlib -name xilffs -ver 5.1
-bsp config extra_compiler_flags "-g -Wall -Wextra -fno-tree-loop-distribute-patterns -DNDEBUG"
+bsp write
+bsp reload
+catch {bsp regenerate}
+platform generate
+bsp reload
+bsp setlib -name lwip213 -ver 1.1
 bsp write
 bsp reload
 catch {bsp regenerate}
 platform generate -domains standalone_domain 
-platform generate
-platform generate -domains standalone_domain,zynqmp_fsbl,zynqmp_pmufw 
-platform active {EMC3_platform}
-bsp reload
-bsp reload
-platform clean
-platform config -updatehw {/home/sundance/Emilie_Projects/git/EMC3/BSP/2023.2/firmware/design_1_wrapper.xsa}
-platform generate
